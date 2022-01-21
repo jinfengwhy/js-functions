@@ -4,7 +4,7 @@ function jfcall(thisArg, ...args) {
   // 1.拿到调用主体
   const fn = this
 
-  // 2.参数转化
+  // 2.参数处理
   thisArg = thisArg === null || thisArg === undefined ? window : Object(thisArg)
 
   // 3.利用this的隐式绑定，进行函数调用
