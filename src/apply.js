@@ -4,7 +4,7 @@ function jfapply(thisArg, argArr) {
   // 1.拿到调用主体
   const fn = this
 
-  // 2.处理入参
+  // 2.参数处理
   // 使用Object包裹有两种情况：a:基本类型（经过Object后转化为包装类型） b:引用类型（经过Object后还是引用类型）
   thisArg = thisArg !== null && thisArg !== undefined ? Object(thisArg) : window
   argArr = argArr || []
