@@ -9,7 +9,7 @@ function jfbind(thisArg, ...args) {
 
   // 3.返回函数
   return function(...rest) {
-    // a.利用this的隐式绑定
+    // a.也是利用this的隐式绑定
     const key = Symbol()
     thisArg[key] = fn
     // b.参数合并
